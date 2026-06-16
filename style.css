@@ -1,4 +1,9 @@
 /* ========== RESET DAN DASAR ========== */
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 1px; /* Sesuaikan dengan tinggi navbar kamu */
+}
+
 * {
   margin: 0;
   padding: 0;
