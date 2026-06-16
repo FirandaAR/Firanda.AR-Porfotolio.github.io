@@ -1,278 +1,633 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firanda.AR | Porfotolio</title>
+    <title>Firanda.AR | Portfolio</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <h1><span>Fir</span>anda.</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#Skill">Skill</a></li>
-          <li><a href="#Project">Project</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="nav-overlay"></div>
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-accent">Fir</span>anda<span class="logo-dot"
+            >.</span
+          >
+        </a>
+
+        <nav id="main-nav">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skill" class="nav-link">Skill</a></li>
+            <li><a href="#project" class="nav-link">Project</a></li>
+            <li><a href="#contact" class="nav-link cta-nav">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="nav-overlay" id="nav-overlay"></div>
     </header>
 
+    <!-- ========== HERO SECTION ========== -->
     <main id="home">
-      <div class="hello">
-        <h2>Halo nama saya <span>Firanda Abdur Rozzaq</span></h2>
-        <h3>Programmer | Pelajar</h3>
-        <p>Selamat datang di Website Porfotolio saya</p>
-        <div>
-          <a href="#about" class="button">About Me</a>
-          <a href="#Contact" class="button">Contact Me</a>
+      <div class="hero-content">
+        <div class="hero-badge">👋 Selamat Datang</div>
+        <h1 class="hero-title">
+          Halo, Saya<br />
+          <span class="highlight">Firanda Abdur Rozzaq</span>
+        </h1>
+        <p class="hero-role">
+          Programmer <span class="role-divider">·</span> Pelajar
+        </p>
+        <p class="hero-desc">
+          Antusias dalam dunia teknologi dan pemrograman. Membangun hal-hal
+          bermanfaat, satu baris kode dalam satu waktu.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Tentang Saya</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+
+        <div class="hero-scroll-hint">
+          <span>Scroll ke bawah</span>
+          <div class="scroll-line"></div>
         </div>
       </div>
-      <div class="profile">
-        <img src="images/gw.jpg" alt="Foto Saya" />
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-ring"></div>
+          <img
+            src="images/gw.jpg"
+            alt="Foto Firanda Abdur Rozzaq"
+            class="hero-img"
+          />
+        </div>
       </div>
     </main>
-    <section>
-      <div id="about" class="about">
-        <div class="about-header">
-          <div class="content-header">
-            <img src="images/firanda.jpeg" alt="" />
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about">
+      <div class="section-container about-grid">
+        <div class="about-image-col">
+          <div class="about-img-frame">
+            <img src="images/firanda.jpeg" alt="Foto Firanda" />
+            <div class="about-img-deco"></div>
           </div>
         </div>
-        <div class="about-content">
-          <h2>About Me</h2>
-           <div class="about-text">
-            <p>
-              Haii, perkenalkan nama saya Firanda Abdur Rozzaq. Saya seorang
-              pelajar yang memiliki banyaaaaaaak hobi. Saya sangat menyukai
-              dunia teknologi, terutama dalam bidang pemrograman. Saya juga
-              senang belajar hal-hal baru yang dapat mengembangkan keterampilan
-              saya di bidang ini.
-            </p>
+
+        <div class="about-text-col">
+          <span class="section-eyebrow">Who Am I</span>
+          <h2 class="section-title">About <span class="highlight">Me</span></h2>
+          <p class="about-desc">
+            Haii! Perkenalkan, saya <strong>Firanda Abdur Rozzaq</strong>. Saya
+            seorang pelajar yang memiliki banyak hobi dan sangat menyukai dunia
+            teknologi, terutama dalam bidang pemrograman.
+          </p>
+          <p class="about-desc">
+            Saya senang belajar hal-hal baru yang dapat mengembangkan
+            keterampilan saya. Mulai dari membangun website, mengeksplorasi
+            Python, hingga berbagi konten edukatif.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Skills</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Semangat</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="Skill">
-      <div class="skills">
-        <h2>My Skills</h2>
-        <div class="list-skills">
-          <div class="card-skill">
-            <img class="skill-img" src="images/htm.svg" alt="" />
-            <h3>HTML</h3>
-            <h4>(HyperText Markup Language)</h4>
-            <p>
-              Bahasa standar untuk membuat struktur dan konten halaman web ,
-              yang menggunakan "tag" untuk mendefinisikan elemen
-            </p>
+
+    <!-- ========== SKILL SECTION ========== -->
+    <section id="skill">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Kemampuan Saya</span>
+          <h2 class="section-title">
+            My <span class="highlight">Skills</span>
+          </h2>
+          <p class="section-subtitle">
+            Teknologi dan bahasa pemrograman yang saya kuasai
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card-skill reveal">
+            <div class="skill-icon-wrap">
+              <img class="skill-img" src="images/htm.svg" alt="HTML Icon" />
+            </div>
+            <div class="skill-info">
+              <h3>HTML</h3>
+              <span class="skill-tag">HyperText Markup Language</span>
+              <p>
+                Bahasa standar untuk membuat struktur dan konten halaman web,
+                mendefinisikan elemen dengan "tag".
+              </p>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" style="--fill: 90%"></div>
+              </div>
+              <span class="level-label">Mahir</span>
+            </div>
           </div>
-          <div class="card-skill">
-            <img class="skill-img" src="images/css.svg" alt="" />
-            <h3>CSS</h3>
-            <h4>(Cascading Style Sheets)</h4>
-            <p>
-              Bahasa pemrograman yang digunakan untuk mendesain tampilan visual
-              (gaya, warna, font, tata letak) halaman web yang dibuat dengan
-              HTML.
-            </p>
+
+          <div class="card-skill reveal">
+            <div class="skill-icon-wrap">
+              <img class="skill-img" src="images/css.svg" alt="CSS Icon" />
+            </div>
+            <div class="skill-info">
+              <h3>CSS</h3>
+              <span class="skill-tag">Cascading Style Sheets</span>
+              <p>
+                Bahasa untuk mendesain tampilan visual — gaya, warna, font, dan
+                tata letak halaman web.
+              </p>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" style="--fill: 80%"></div>
+              </div>
+              <span class="level-label">Mahir</span>
+            </div>
           </div>
-          <div class="card-skill">
-            <img class="skill-img" src="images/python.svg" alt="" />
-            <h3>Python</h3>
-            <h4>(High level programming language)</h4>
-            <p>
-              Bahasa pemrograman tingkat tinggi yang serbaguna, digunakan untuk
-              pengembangan web, analisis data, DLL.
-            </p>
+
+          <div class="card-skill reveal">
+            <div class="skill-icon-wrap">
+              <img
+                class="skill-img"
+                src="images/python.svg"
+                alt="Python Icon"
+              />
+            </div>
+            <div class="skill-info">
+              <h3>Python</h3>
+              <span class="skill-tag">High Level Language</span>
+              <p>
+                Bahasa pemrograman tingkat tinggi yang serbaguna: web, analisis
+                data, otomasi, dan masih banyak lagi.
+              </p>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" style="--fill: 70%"></div>
+              </div>
+              <span class="level-label">Menengah</span>
+            </div>
+          </div>
+
+          <!-- Tambahan skill baru -->
+          <div class="card-skill reveal">
+            <div class="skill-icon-wrap">
+              <img class="skill-img" src="images/figma.svg" alt="Figma Icon" />
+            </div>
+            <div class="skill-info">
+              <h3>Design Graphic</h3>
+              <span class="skill-tag">Canva & Figma</span>
+              <p>
+                Mahir dalam pembuatan desain grafis dan prototyping menggunakan
+                Canva dan Figma.
+              </p>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" style="--fill: 85%"></div>
+              </div>
+              <span class="level-label">Mahir</span>
+            </div>
+          </div>
+
+          <div class="card-skill reveal">
+            <div class="skill-icon-wrap">
+              <img
+                class="skill-img"
+                src="images/django.svg"
+                alt="Django Icon"
+              />
+            </div>
+            <div class="skill-info">
+              <h3>Django</h3>
+              <span class="skill-tag">Web Framework (Python)</span>
+              <p>
+                Pengalaman membangun aplikasi web menggunakan Django: routing,
+                models, templates, dan basic deployment.
+              </p>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" style="--fill: 60%"></div>
+              </div>
+              <span class="level-label">Menengah</span>
+            </div>
+          </div>
+
+          <div class="card-skill reveal">
+            <div class="skill-icon-wrap">
+              <img class="skill-img" src="images/sql.svg" alt="SQL Icon" />
+            </div>
+            <div class="skill-info">
+              <h3>Database SQL</h3>
+              <span class="skill-tag">Relational Databases</span>
+              <p>
+                Mahir dalam penggunaan SQL untuk desain skema, query, indexing,
+                dan optimisasi dasar.
+              </p>
+            </div>
+            <div class="skill-level">
+              <div class="level-bar">
+                <div class="level-fill" style="--fill: 90%"></div>
+              </div>
+              <span class="level-label">Mahir</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="Project">
-      <div class="projects">
-        <h2>My projects</h2>
-        <div class="list-project">
-          
 
-          <!-- == CARD 1 == -->
-          <div class="card-project">
-            <a href="https://firandaar.github.io/index.html" target="_blank"
-              ><img src="images/film.png" alt=""
-            /></a>
-            <h3>
-              <a href="https://firandaar.github.io/index.html" target="_blank"
-                >Bahasa Arab</a
-              >
-            </h3>
+    <!-- ========== PROJECT SECTION ========== -->
+    <section id="project">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-eyebrow">Karya Saya</span>
+          <h2 class="section-title">
+            My <span class="highlight">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            Kumpulan proyek yang telah saya kerjakan
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="card-project reveal">
+            <a
+              href="https://firandaar.github.io/index.html"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="project-img-wrap">
+                <img src="images/film.png" alt="Bahasa Arab Project" />
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Website</span>
+                <h3>Bahasa Arab</h3>
+              </div>
+            </a>
           </div>
 
-          <!-- == CARD 2 == -->
-          <div class="card-project">
+          <div class="card-project reveal">
             <a
               href="https://youtu.be/SQ_LKM7xVFs?si=sUqvaKaFKfZRQjnc"
               target="_blank"
-              ><img src="images/syarah.png" alt=""
-            /></a>
-            <h3>
-              <a
-                href="https://youtu.be/SQ_LKM7xVFs?si=sUqvaKaFKfZRQjnc"
-                target="_blank"
-                >Syarah Hadist</a
-              >
-            </h3>
+              class="project-link"
+            >
+              <div class="project-img-wrap">
+                <img src="images/syarah.png" alt="Syarah Hadist" />
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Video</span>
+                <h3>Syarah Hadist</h3>
+              </div>
+            </a>
           </div>
-          <!-- == CARD 3 == -->
-          <div class="card-project">
+
+          <div class="card-project reveal">
             <a
               href="https://youtu.be/lTZad7wMEBs?si=Na62QQwms3MCnjA-"
               target="_blank"
-              ><img src="images/tahajji.png" alt=""
-            /></a>
-            <h3>
-              <a
-                href="https://youtu.be/lTZad7wMEBs?si=Na62QQwms3MCnjA-"
-                target="_blank"
-                >Tahajji</a
-              >
-            </h3>
+              class="project-link"
+            >
+              <div class="project-img-wrap">
+                <img src="images/tahajji.png" alt="Tahajji" />
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Video</span>
+                <h3>Tahajji</h3>
+              </div>
+            </a>
           </div>
-          <!-- == CARD 4 == -->
-          <div class="card-project">
+
+          <div class="card-project reveal">
             <a
-              href="https://www.canva.com/design/DAG7SWVl4tA/qV7J9ANyKaodwrGZbeGkWg/edit?utm_content=DAG7SWVl4tA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              href="https://www.canva.com/design/DAG7SWVl4tA/qV7J9ANyKaodwrGZbeGkWg/edit"
               target="_blank"
-              ><img src="images/poster.png" alt=""
-            /></a>
-            <h3>
-              <a
-                href="https://www.canva.com/design/DAG7SWVl4tA/qV7J9ANyKaodwrGZbeGkWg/edit?utm_content=DAG7SWVl4tA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                target="_blank"
-                >Poster Tahajji</a
-              >
-            </h3>
+              class="project-link"
+            >
+              <div class="project-img-wrap">
+                <img src="images/poster.png" alt="Poster Tahajji" />
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Design</span>
+                <h3>Poster Tahajji</h3>
+              </div>
+            </a>
           </div>
-          <!-- == CARD 5 == -->
-          <div class="card-project">
+
+          <div class="card-project reveal">
             <a
               href="https://youtu.be/icVJqdBCNXo?si=d8lIKOEw3lmFN3Mj"
               target="_blank"
-              ><img src="images/tasmi'.png" alt=""
-            /></a>
-            <h3>
-              <a
-                href="https://youtu.be/icVJqdBCNXo?si=d8lIKOEw3lmFN3Mj"
-                target="_blank"
-                >Tasmi' Juz 30</a
-              >
-            </h3>
+              class="project-link"
+            >
+              <div class="project-img-wrap">
+                <img src="images/tasmi'.png" alt="Tasmi Juz 30" />
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Video</span>
+                <h3>Tasmi' Juz 30</h3>
+              </div>
+            </a>
           </div>
-          
-          <!-- == CARD 6 == -->
-           <div class="card-project">
-            <a href="https://firandaar.github.io/index.html" target="_blank"
-              ><img src="images/project1.png" alt=""
-            /></a>
-            <h3>
-              <a href="https://firandaar.github.io/index.html" target="_blank"
-                >Biodata Website</a
-              >
-            </h3>
+
+          <div class="card-project reveal">
+            <a
+              href="https://firandaar.github.io/index.html"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="project-img-wrap">
+                <img src="images/project1.png" alt="Biodata Website" />
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Website</span>
+                <h3>Biodata Website</h3>
+              </div>
+            </a>
           </div>
-          <!-- == CARD 7 == -->
-          <div class="card-project">
+
+          <div class="card-project reveal">
             <a
               href="https://firandaar.github.io/Slicing-Yakult.github.io/"
               target="_blank"
-              ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmcreIOm9ZidSGKXSd4cHh9E1PMGMsPQcwg&s" alt=""
-            /></a>
-            <h3>
-              <a
-                href="https://firandaar.github.io/Slicing-Yakult.github.io/"
-                target="_blank"
-                >Slicing Web</a
-              >
-            </h3>
+              class="project-link"
+            >
+              <div class="project-img-wrap">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmcreIOm9ZidSGKXSd4cHh9E1PMGMsPQcwg&s"
+                  alt="Slicing Web"
+                />
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Website</span>
+                <h3>Slicing Web</h3>
+              </div>
+            </a>
           </div>
-          <!-- == CARD 8 == -->
-           <div class="card-project">
+
+          <div class="card-project reveal">
             <a
               href="https://github.com/FirandaAR/Python-API"
               target="_blank"
-              ><img src="data:image/jpeg;base64,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" alt=""
-            /></a>
-            <h3>
-              <a
-                href="https://github.com/FirandaAR/Python-API"
-                target="_blank"
-                >Python Project</a
-              >
-            </h3>
+              class="project-link"
+            >
+              <div class="project-img-wrap project-img-github">
+                <div class="github-placeholder">
+                  <span class="github-icon">{ }</span>
+                  <span>Python API</span>
+                </div>
+                <div class="project-overlay">
+                  <span class="overlay-icon">↗</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Python</span>
+                <h3>Python Project</h3>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <footer>
-      <div class="contact" id="Contact">
-        <h2>Contact Me</h2>
-        <p>Contact me if you need!</p>
-        <div class="contact-info">
-          <div class="contact-item">
-            <a href="https://wa.me/6282221043497" target="_blank"
-              ><img src="images/wa.png" alt=""
-            /></a>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <footer id="contact">
+      <div class="section-container">
+        <div class="contact-wrapper">
+          <div class="contact-text">
+            <span class="section-eyebrow">Get In Touch</span>
+            <h2 class="section-title">
+              Hubungi <span class="highlight">Saya</span>
+            </h2>
+            <p class="contact-desc">
+              Punya pertanyaan, ide kolaborasi, atau sekadar ingin menyapa? Saya
+              selalu terbuka untuk ngobrol!
+            </p>
           </div>
-          <div class="contact-item">
-            <a href="https://www.instagram.com/firnotbad_/" target="_blank"
-              ><img src="images/ig.png" alt=""
-            /></a>
+
+          <div class="contact-links">
+            <a
+              href="https://wa.me/6282221043497"
+              target="_blank"
+              class="contact-card"
+            >
+              <div class="contact-icon-wrap">
+                <img src="images/wa.png" alt="WhatsApp" />
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-platform">WhatsApp</span>
+                <span class="contact-handle">+62 822-2104-3497</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/firnotbad_/"
+              target="_blank"
+              class="contact-card"
+            >
+              <div class="contact-icon-wrap">
+                <img src="images/ig.png" alt="Instagram" />
+              </div>
+              <div class="contact-card-info">
+                <span class="contact-platform">Instagram</span>
+                <span class="contact-handle">@firnotbad_</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
           </div>
         </div>
       </div>
-      <p class="footer-note">
-        &copy; 2024 Made with ♥ by Firanda Abdur Rozzaq. All rights reserved.
-      </p>
+
+      <div class="footer-bottom">
+        <p>
+          © 2024 Made with <span class="heart">♥</span> by
+          <strong>Firanda Abdur Rozzaq</strong>. All rights reserved.
+        </p>
+      </div>
     </footer>
 
-    <!-- === Bootstrap JS === -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-  const cards = document.querySelectorAll(
-    ".card-skill, .card-project"
-  )
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show")
-        }
+      // ===== NAVBAR SCROLL EFFECT =====
+      const navbar = document.getElementById('navbar')
+      window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 50)
       })
-    },
-    {
-      threshold: 0.2
-    }
-  )
 
-  cards.forEach(card => observer.observe(card))
-</script>
+      // ===== HAMBURGER MENU =====
+      const hamburger = document.getElementById('hamburger')
+      const mainNav = document.getElementById('main-nav')
+      const overlay = document.getElementById('nav-overlay')
 
+      function toggleMenu(open) {
+        hamburger.classList.toggle('active', open)
+        mainNav.classList.toggle('open', open)
+        overlay.classList.toggle('show', open)
+        hamburger.setAttribute('aria-expanded', open)
+        document.body.style.overflow = open ? 'hidden' : ''
+      }
+
+      hamburger.addEventListener('click', () => {
+        const isOpen = mainNav.classList.contains('open')
+        toggleMenu(!isOpen)
+      })
+
+      overlay.addEventListener('click', () => toggleMenu(false))
+
+      // Close nav when a link is clicked
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        link.addEventListener('click', () => toggleMenu(false))
+      })
+
+      // ===== SMOOTH SCROLL (custom eased, ~900ms) =====
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+      }
+
+      function smoothScrollTo(targetY, duration) {
+        const startY = window.scrollY
+        const distance = targetY - startY
+        let startTime = null
+
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp
+          const elapsed = timestamp - startTime
+          const progress = Math.min(elapsed / duration, 1)
+          window.scrollTo(0, startY + distance * easeInOutCubic(progress))
+          if (progress < 1) requestAnimationFrame(step)
+        }
+
+        requestAnimationFrame(step)
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          const target = document.querySelector(this.getAttribute('href'))
+          if (target) {
+            const offset = 80
+            const top =
+              target.getBoundingClientRect().top + window.scrollY - offset
+            smoothScrollTo(top, 900) // 900ms — terasa natural, tidak terlalu lambat
+          }
+        })
+      })
+
+      // ===== REVEAL ON SCROLL =====
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              // Stagger delay based on index within parent
+              const siblings = [...entry.target.parentElement.children]
+              const idx = siblings.indexOf(entry.target)
+              entry.target.style.transitionDelay = `${idx * 0.1}s`
+              entry.target.classList.add('visible')
+              revealObserver.unobserve(entry.target)
+            }
+          })
+        },
+        { threshold: 0.15 }
+      )
+
+      document
+        .querySelectorAll('.reveal')
+        .forEach((el) => revealObserver.observe(el))
+
+      // ===== ACTIVE NAV LINK ON SCROLL =====
+      const sections = document.querySelectorAll('main[id], section[id]')
+      const navLinks = document.querySelectorAll('.nav-link')
+
+      const activeObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => {
+                link.classList.toggle(
+                  'active',
+                  link.getAttribute('href') === `#${entry.target.id}`
+                )
+              })
+            }
+          })
+        },
+        { rootMargin: '-40% 0px -55% 0px' }
+      )
+
+      sections.forEach((section) => activeObserver.observe(section))
+
+      // ===== SKILL BAR ANIMATION =====
+      const skillBars = document.querySelectorAll('.level-fill')
+      const barObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.width =
+                entry.target.style.getPropertyValue('--fill')
+              barObserver.unobserve(entry.target)
+            }
+          })
+        },
+        { threshold: 0.5 }
+      )
+
+      skillBars.forEach((bar) => barObserver.observe(bar))
+    </script>
   </body>
 </html>
